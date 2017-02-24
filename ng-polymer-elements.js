@@ -148,7 +148,7 @@
           scope: scopeDefinition,
 
           link: function (scope, element, attrs) {
-
+            setTimeout(function() {
             var el = element[0];
 
             var observers = {}
@@ -291,6 +291,7 @@
                 });
               }
             });
+          });
           }
         };
       }]);
